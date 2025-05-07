@@ -49,20 +49,30 @@
       box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     }
 
-    .headshot-container {
-      width: 200px;
-      height: 200px;
-      overflow: hidden;
-      border-radius: 10px;
-      margin: 20px auto;
-    }
+.photo-row {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+}
 
-    .headshot-container img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      object-position: center bottom;
-    }
+  .photo-row img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  
+  /* First image: center-bottom */
+  .bottom-crop {
+    object-position: center bottom;
+  }
+  
+  /* Second image: fully centered */
+  .center-crop {
+    object-position: center;
+  }
+
 
     .about {
       margin-top: 20px;
@@ -111,9 +121,12 @@
       <p>I work in <a href="https://richardson-lab.nau.edu/" target="_blank">The Richardson Lab</a>, advised by Dr. Andrew Richardson. The lab is housed in the <a href="https://nau.edu/school-of-informatics-computing-and-cyber-systems/" target="_blank">School of Informatics, Computing, and Cyber Systems (SICCS)</a> and affiliated with the <a href="https://ecoss.nau.edu/" target="_blank">Center for Ecosystem Science and Society (Ecoss)</a>.</p>
       <p>Take a look around to learn more about who I am and what I do!</p>
 
-      <div class="headshot-container">
-        <img src="IMG_2045.JPG" alt="Headshot Pic">
+      <div class="photo-row">
+        <img src="IMG_2045.JPG" alt="Headshot Pic" class="bottom-crop">
+        <img src="field_tower.JPG" alt="Field Pic" class="center-crop">
       </div>
+
+
     </div>
   </section>
 
