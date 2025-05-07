@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome to My Homepage</title>
+    <title>Homepage</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -13,7 +13,7 @@
             background-color: #f4f4f4;
         }
         header {
-            background-color: #145c14; /* Dark forest green */
+            background-color: #062e03; 
             color: white;
             padding: 20px 0;
         }
@@ -25,32 +25,39 @@
             border-radius: 10px;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
-        img {
-            max-width: 200px;
-            height: auto;
+        .headshot-container {
+            width: 200px;
+            height: 200px;
+            overflow: hidden;
             border-radius: 10px;
-            margin-top: 20px;
+            margin: 20px auto;
+        }
+        .headshot-container img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
         }
         .about {
             margin-top: 20px;
             text-align: left;
         }
         .about h2 {
-            color: #228B22; /* Match header color */
+            color: #062e03;
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>Welcome to My Homepage</h1>
+        <h1>Homepage</h1>
     </header>
     <section>
         <div class="about">
             <h2>About Me</h2>
-            <p>Hello! My name is Jen L. Diehl, and I'm excited to share a little bit about myself. 
-            I'm passionate about [your interests or hobbies], and I love creating and learning new things.</p>
+            <p>Hello! My name is Jen L. Diehl, and I'm excited to share a little bit about myself.</p>
             <p>Feel free to look around and learn more about me!</p>
-            <img src="IMG_2045.JPG" alt="Headshot Pic">
+            <div class="headshot-container">
+                <img src="IMG_2045.JPG" alt="Headshot Pic">
+            </div>
         </div>
     </section>
 </body>
