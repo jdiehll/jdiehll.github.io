@@ -76,19 +76,20 @@
     }
     
     .hobby-gallery {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
       gap: 15px;
       margin-top: 20px;
+      justify-items: center;
     }
     
     .hobby-gallery img {
-      width: 150px;          /* smaller and consistent */
+      width: 150px;
       height: 150px;
       object-fit: cover;
       border-radius: 10px;
     }
+
 
     .back-link {
       display: block;
@@ -140,8 +141,9 @@
   
     <h2>Outside of Research</h2>
   
-    <p>Outside of research, I’m actively involved in community mental health advocacy. I volunteer as the Northern Arizona chair for the <a href="https://afsp.org/" target="_blank">American Foundation for Suicide Prevention</a>, coordinating events like community walks and awareness campaigns.</p>
-  
+    <li><p>Outside of research, I’m actively involved in community mental health advocacy. I volunteer as the Northern Arizona chair for the <a href="https://afsp.org/" target="_blank">American Foundation for Suicide Prevention</a>, coordinating events like community walks and awareness campaigns.</p>
+    </li>
+    
     <p>I care about the work I do, but I also value the time I spend outside of it — with friends, family, and in the outdoors. Getting away from the screen helps me reset and stay present in both life and research.</p>
   
     <p>Here are a few snapshots from adventures that keep me grounded: scuba diving, XC skiing the American Birkebeiner, running rim-to-rim in the Grand Canyon, canoeing, and hiking with my dog.</p>
